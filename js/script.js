@@ -16,3 +16,6 @@
 
     let resultado = calc.sum(5,3);
     console.log(resultado);
+
+    resultado = calc.subtraction(10,5);
+    console.log(resultado);
