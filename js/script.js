@@ -26,6 +26,10 @@
         multiplication(n1,n2){
             return n1 * n2 ;
         }
+
+        btnPress(){
+
+        }
     }
 
     //Instanciar a classe
@@ -38,6 +42,7 @@
      // chamando a multiplicação
      resultado = calc.multiplication(5,6);
      console.log(resultado);
+     document.querySelector('#upper-number'). textContent = '5 x 6 =';
      document.querySelector('#result-number'). textContent = resultado;
 
     // chamando a divisão 
@@ -47,6 +52,14 @@
     // chamando a subtração 
     resultado = calc.subtraction(10,5);
     console.log(resultado);
+
+    // mapeando os botões
+    let button = document.querySelectorAll('.btn');
+
+    for (let i=0; button.length > i; i++){
+        button [i].addEventListener ('click', calc.btnPress);
+    }
+    
 
   
 
